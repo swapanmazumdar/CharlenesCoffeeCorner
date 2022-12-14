@@ -13,6 +13,9 @@ public class ExtraMilk extends ExtrasDecorator {
     private Beverage beverage;
 
     public ExtraMilk(Beverage beverage) {
+        if(beverage == null) {
+            throw new RuntimeException("Beverage can't be null");
+        }
         this.beverage = beverage;
     }
 

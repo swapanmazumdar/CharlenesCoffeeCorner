@@ -12,6 +12,9 @@ public class SpecialRoastCoffee extends ExtrasDecorator {
     private final double costOfSpecialRoast = 0.90;
 
     public SpecialRoastCoffee(Beverage beverage) {
+        if(beverage == null) {
+            throw new RuntimeException("Beverage can't be null");
+        }
         this.beverage = beverage;
     }
 

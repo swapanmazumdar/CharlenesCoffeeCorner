@@ -12,6 +12,9 @@ public class FoamedMilk extends ExtrasDecorator {
     private final double costOfFoamedMilk = 0.50;
 
     public FoamedMilk(Beverage beverage) {
+        if(beverage == null) {
+            throw new RuntimeException("Beverage can't be null");
+        }
         this.beverage = beverage;
     }
 
