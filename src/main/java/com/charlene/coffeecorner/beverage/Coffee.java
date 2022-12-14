@@ -1,6 +1,6 @@
 package com.charlene.coffeecorner.beverage;
 
-import static com.charlene.coffeecorner.Store.DEFAULT_CURRENCY_CODE;
+import static com.charlene.coffeecorner.Store.CURRENCY_CODE;
 
 public class Coffee extends Beverage {
     private final String description = "House Coffee";
@@ -25,7 +25,7 @@ public class Coffee extends Beverage {
     @Override
     public String getDescription() {
         // TODO refactor to decorate with currency code
-        return String.format("%s %s\t\t\t%.2f%s", description, size.toString().toLowerCase(), getCost(), DEFAULT_CURRENCY_CODE);
+        return String.format("%s %s\t\t\t%.2f%s", description, size.toString().toLowerCase(), getCost(), CURRENCY_CODE);
     }
 
     @Override

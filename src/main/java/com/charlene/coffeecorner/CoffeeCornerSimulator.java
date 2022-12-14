@@ -1,9 +1,6 @@
 package com.charlene.coffeecorner;
 
-import com.charlene.coffeecorner.beverage.BaconRoll;
-import com.charlene.coffeecorner.beverage.Beverage;
-import com.charlene.coffeecorner.beverage.Coffee;
-import com.charlene.coffeecorner.beverage.MenuItem;
+import com.charlene.coffeecorner.beverage.*;
 import com.charlene.coffeecorner.beverage.extras.ExtraMilk;
 import com.charlene.coffeecorner.beverage.extras.SpecialRoastCoffee;
 
@@ -12,11 +9,11 @@ import java.util.Currency;
 import java.util.List;
 import java.util.Locale;
 
-public class CofeeCornerSimulator {
+public class CoffeeCornerSimulator {
 
     final static private Currency localCurrency = Currency.getInstance("CHF");
 
-    public CofeeCornerSimulator() {
+    public CoffeeCornerSimulator() {
         final Locale deCHLocale = new Locale("de-CH");
     }
 
@@ -43,6 +40,8 @@ public class CofeeCornerSimulator {
         BaconRoll baconRoll = new BaconRoll();
         order.add(baconRoll);
 
+        OrangeJuice orangeJuice = new OrangeJuice();
+        order.add(orangeJuice);
         // now print order
         printOrder(order);
     }
