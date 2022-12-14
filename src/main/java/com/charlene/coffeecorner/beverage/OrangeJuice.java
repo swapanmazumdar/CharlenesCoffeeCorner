@@ -11,7 +11,7 @@ public class OrangeJuice implements MenuItem {
 
     @Override
     public double getCost() {
-        return 0;
+        return cost;
     }
 
 }
