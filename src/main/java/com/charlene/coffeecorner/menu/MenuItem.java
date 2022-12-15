@@ -1,4 +1,4 @@
-package com.charlene.coffeecorner.beverage;
+package com.charlene.coffeecorner.menu;
 
 public interface MenuItem {
 

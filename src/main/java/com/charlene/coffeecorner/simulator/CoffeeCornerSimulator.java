@@ -1,8 +1,10 @@
-package com.charlene.coffeecorner;
+package com.charlene.coffeecorner.simulator;
 
 import com.charlene.coffeecorner.beverage.*;
 import com.charlene.coffeecorner.beverage.extras.ExtraMilk;
 import com.charlene.coffeecorner.beverage.extras.SpecialRoastCoffee;
+import com.charlene.coffeecorner.menu.sideorder.BaconRoll;
+import com.charlene.coffeecorner.menu.MenuItem;
 
 import java.util.ArrayList;
 import java.util.Currency;

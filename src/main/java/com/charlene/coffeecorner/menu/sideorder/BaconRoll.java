@@ -1,6 +1,6 @@
-package com.charlene.coffeecorner.beverage;
+package com.charlene.coffeecorner.menu.sideorder;
 
-import com.charlene.coffeecorner.beverage.MenuItem;
+import com.charlene.coffeecorner.menu.MenuItem;
 
 public class BaconRoll implements MenuItem {
 
